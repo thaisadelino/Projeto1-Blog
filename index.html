@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pacifico&family=Philosopher:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,39 +24,22 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#" title="Vá para seção Saúde.">Saúde</a>
+                        <a href="#saude" title="Vá para seção Saúde.">Saúde</a>
                     </li>
                     <li>
-                        <a href="#" title="Vá para seção Alimentação.">Alimentação</a>
+                        <a href="#alimentacao" title="Vá para seção Alimentação.">Alimentação</a>
                     </li>
                     <li>
-                        <a href="#" title="Vá para seção de Dicas.">Dicas</a>
+                        <a href="#dicas" title="Vá para seção de Dicas.">Dicas</a>
+                    </li>
+                    <li>
+                        <a href="#inscricao" title="Inscreva-se!">Inscreva-se</a>
                     </li>
                 </ul>
             </nav>
         </div>   
     </header>
-    <aside>
-        <div class="container">
-            <h2>
-                Mural do AUconchego
-            </h2>
-            <ul>
-                <li>
-                    <img src="./imagens/bichinho11.jpg" alt="cachorrinha"></a>
-                    <p>Ariel, 2 anos</p>
-                </li>
-                <li>
-                    <img src="./imagens/bichinho2.jpg" alt="cachorrinha"></a>
-                    <p>Ayla, 2 anos</p>
-                </li>
-            </ul>
-            <nav>
-                <a href="#">Poste fotos do seu Miau-Aumigo aqui!</a>
-            </nav>
-        </div>
-    </aside>
-    <section>
+    <section id="saude">
         <div class="container">
             <h2>Saúde</h2>
             <div class="articles">
@@ -77,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="alimentacao">
         <div class="container">
             <h2>Alimentação</h2>
             <div class="articles">
@@ -98,22 +81,62 @@
             </div>
         </div>
     </section>
+    <section id="dicas">
+        <div class="container">
+            <h2>Dicas</h2>
+            <div class="articles">
+                <div class="dicas">
+                    <article>
+                        <img src="./imagens/ansiedade.jpg" alt="cão ansioso">
+                        <a href="#" title="Leia mais">Brincadeiras para reduzir a ansiedade por separação.</a>
+                    </article>
+                    <article>
+                        <img src="./imagens/comados.basicos.jpg" alt="cão dando a pata">
+                        <a href="#" title="Leia mais">Dicas práticas para ensinar comandos básicos para seu cãozinho.</a>
+                    </article>
+                    <article>
+                        <img src="./imagens/tapete.higienico.jpg" alt="cão e tapete higienico">
+                        <a href="#" title="Leia mais">Como ensinar à usar o tapete higiênico?</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="inscricao">
+        <div class="form">
+            <div class="container">
+                <h3>Inscreva-se e rebeba em primeira mão nossos artigos!</h3>
+                <form>
+                    <label for="nome">Nome Completo</label> <br>
+                    <input id="nome" type="text" required/> <br>
+                    <label for="email">E-mail</label> <br>
+                    <input id="email" type="email" required/> <br>
+                    <label for="celular">Seu Celular</label> <br>
+                    <input id="celular" type="tel"/> <br>
+                    <label for="mensagem">Deixe sua sugestão, elogio ou duvidas.</label> <br>
+                    <textarea required></textarea> <br>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div> 
+    </section>
     <footer>
         <div class="container">
             <nav>
                 <ul>
                     <li>
-                        <a href="#" title="Nos siga no Instagram"><img src="imagens/instagram2.png" alt="logo instagram"></a>
+                        <a href="#" title="Nos siga no Instagram"><img src="imagens/insta.png" alt="logo instagram"></a>
                     </li>
                     <li>
-                        <a href="#" title="Nos acompanhe no Facebook"><img src="imagens/face3.png" alt="logo facebook"></a>
+                        <a href="#" title="Nos acompanhe no Facebook"><img src="imagens/face.png" alt="logo facebook"></a>
                     </li>
                     <li>
-                        <a href="#" title="Nos siga no Twitter"><img src="imagens/twitter.png" alt="logo do twitter"></a>
+                        <a href="#" title="Nos siga no Twitter"><img src="imagens/tt.png" alt="logo do twitter"></a>
                     </li>
                 </ul>
             </nav>
-        
+        </div>
+        <div class="container">
             <p>
                 &copy; Dog-Pédia - Todos os direitos reservados - 2023
             </p>
